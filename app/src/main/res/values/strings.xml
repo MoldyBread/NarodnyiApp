@@ -10,4 +10,7 @@
     <string name="input_password">Введіть пароль</string>
     <string name="input_PIN">PIN</string>
     <string name="accept">Підтвердити</string>
+    <string name="inputTelephoneNumber">Введіть номер телефону</string>
+    <string name="login">ВХІД</string>
+    <string name="OK">ОК</string>
 </resources>
