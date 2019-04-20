@@ -2,4 +2,7 @@
     <string name="app_name">NarodnyiApp</string>
     <string name="h">H!</string>
     <string name="title_activity_rules">RulesActivity</string>
+    <string name="phone_number">+38(050)000-00-00</string>
+    <string name="data_agree">Я згоден на обробку даних</string>
+    <string name="contin">Продовжити</string>
 </resources>
