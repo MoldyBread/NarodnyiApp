@@ -61,7 +61,9 @@
             android:layout_gravity="center"
             android:background="@null"
             android:scaleType="centerCrop"
-            android:src="@drawable/camera" />
+            android:src="@drawable/camera"
+            android:clickable="true"
+            android:onClick="cameraOnClick"/>
     </LinearLayout>
     </LinearLayout>
 

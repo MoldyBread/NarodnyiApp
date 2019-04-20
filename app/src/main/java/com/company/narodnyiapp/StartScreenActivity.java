@@ -16,7 +16,6 @@ public class StartScreenActivity extends AppCompatActivity {
     public void onClick(View view) {
         Intent myIntent = new Intent(this, RegistrationActivity.class);
         startActivity(myIntent);
-
     }
 }
 
