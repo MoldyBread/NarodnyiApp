@@ -2,4 +2,7 @@
     <string name="app_name">NarodnyiApp</string>
     <string name="h">H!</string>
     <string name="title_activity_rules">RulesActivity</string>
+    <string name="inputTelephoneNumber">Введіть номер телефону</string>
+    <string name="login">ВХІД</string>
+    <string name="OK">ОК</string>
 </resources>
