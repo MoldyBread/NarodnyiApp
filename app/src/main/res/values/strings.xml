@@ -5,4 +5,9 @@
     <string name="phone_number">+38(050)000-00-00</string>
     <string name="data_agree">Я згоден на обробку даних</string>
     <string name="contin">Продовжити</string>
+    <string name="registration">Реєстрація</string>
+    <string name="new_password">Новий пароль</string>
+    <string name="input_password">Введіть пароль</string>
+    <string name="input_PIN">PIN</string>
+    <string name="accept">Підтвердити</string>
 </resources>
