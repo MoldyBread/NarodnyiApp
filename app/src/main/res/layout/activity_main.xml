@@ -6,6 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="16dp"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:text="skip" />
+
+    </LinearLayout>-->
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,23 +39,15 @@
         android:orientation="vertical" >
 
         <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="left"
             android:background="@null"
             android:scaleType="centerCrop"
-            android:src="@drawable/question" />
-
-        <!--<GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top"
-                android:hint="123" />
-        </GridLayout>-->
+            android:src="@drawable/question"
+            android:clickable="true"
+            android:onClick="onClick"/>
 
     <LinearLayout
         android:layout_width="match_parent"

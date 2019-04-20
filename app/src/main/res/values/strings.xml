@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">NarodnyiApp</string>
     <string name="h">H!</string>
+    <string name="title_activity_rules">RulesActivity</string>
 </resources>
