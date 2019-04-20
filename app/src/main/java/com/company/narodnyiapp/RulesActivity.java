@@ -15,4 +15,7 @@ public class RulesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rules);
     }
 
+    public void skipOnClick(View view) {
+        finish();
+    }
 }
