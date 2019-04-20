@@ -22,7 +22,7 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/enter_password"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         app:passwordToggleDrawable="@android:drawable/ic_menu_view"
         app:passwordToggleEnabled="true"
@@ -43,7 +43,7 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/enter_PIN"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         app:passwordToggleDrawable="@android:drawable/ic_menu_view"
         app:passwordToggleEnabled="true"
