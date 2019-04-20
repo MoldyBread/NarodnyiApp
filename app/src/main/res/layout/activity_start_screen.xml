@@ -11,9 +11,11 @@
         android:layout_height="wrap_content"
         android:src="@drawable/camera"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
 
     <EditText
         android:id="@+id/textView"
@@ -29,18 +31,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="84dp"
         android:text="@string/data_agree"
         app:layout_constraintBottom_toBottomOf="@+id/buttonContinue"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonContinue"
@@ -49,9 +52,10 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"
         android:text="@string/contin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.805" />
 
 </android.support.constraint.ConstraintLayout>
