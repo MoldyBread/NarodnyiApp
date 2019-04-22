@@ -1,7 +1,6 @@
 package com.company.narodnyiapp;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 
 import com.company.narodnyiapp.exception.NoAccessException;
 import com.company.narodnyiapp.location.MyLocationListener;
+import com.company.narodnyiapp.rules.RulesActivity;
 
 
 public class MainActivity extends AppCompatActivity {
