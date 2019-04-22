@@ -47,11 +47,11 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/enter_password"
-        app:layout_constraintVertical_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/enter_password"
+        app:layout_constraintRight_toRightOf="@+id/enter_password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
         app:passwordToggleDrawable="@android:drawable/ic_menu_view"
         app:passwordToggleEnabled="true"
         tools:ignore="MissingConstraints">
@@ -76,6 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.73"/>
+        app:layout_constraintVertical_bias="0.73"
+        android:onClick="onClick"/>
 
 </android.support.constraint.ConstraintLayout>
