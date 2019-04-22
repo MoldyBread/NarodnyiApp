@@ -3,7 +3,7 @@ package com.company.narodnyiapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class cabinetActivity extends AppCompatActivity {
+public class CabinetActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
