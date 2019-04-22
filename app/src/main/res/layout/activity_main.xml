@@ -37,8 +37,7 @@
             android:layout_gravity="center"
             android:background="@null"
             android:scaleType="centerCrop"
-            android:src="@drawable/camera"
-            android:onClick="cameraOnClick"/>
+            android:src="@drawable/camera"/>
     </LinearLayout>
     </LinearLayout>
 
