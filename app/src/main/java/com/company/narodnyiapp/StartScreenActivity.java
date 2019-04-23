@@ -13,12 +13,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUser;
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserAttributes;
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserCodeDeliveryDetails;
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.SignUpHandler;
 
-import com.company.narodnyiapp.login.CognitoSettings;
 import com.company.narodnyiapp.pin_registration.GMailSender;
 import com.company.narodnyiapp.pin_registration.LoginCrd;
 import com.company.narodnyiapp.pin_registration.PIN;
