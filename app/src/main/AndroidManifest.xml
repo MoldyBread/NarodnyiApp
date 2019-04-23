@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.company.narodnyiapp">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CabinetActivity"></activity>
+        <activity android:name=".CabinetActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -21,6 +22,10 @@
         <activity
             android:name=".MainActivity"
             android:label="Main activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SentForm"
+            android:label="SentForm activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RegistrationActivity"
@@ -38,6 +43,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>
