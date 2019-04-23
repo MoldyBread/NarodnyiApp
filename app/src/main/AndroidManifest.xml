@@ -14,7 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SentForm"></activity>
         <activity android:name=".CabinetActivity" />
         <activity
             android:name=".LoginActivity"
@@ -23,6 +22,10 @@
         <activity
             android:name=".MainActivity"
             android:label="Main activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SentForm"
+            android:label="SentForm activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RegistrationActivity"
