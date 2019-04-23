@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         });
 
+
         ActivityCompat.requestPermissions(MainActivity.this,
                 new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                 1);
