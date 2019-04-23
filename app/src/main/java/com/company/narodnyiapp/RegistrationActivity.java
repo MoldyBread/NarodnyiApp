@@ -1,13 +1,13 @@
 package com.company.narodnyiapp;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Toast;
 
-import com.company.narodnyiapp.pin_registration.PIN;
+import com.company.narodnyiapp.pin_registration.LoginCrd;
 
 public class RegistrationActivity extends AppCompatActivity {
     @Override
@@ -16,9 +16,16 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
     }
 
-
     public void onClick(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        RegistrationActivity.this.startActivity(intent);
+
+        TextInputLayout textInputLayout = findViewById(R.id.enter_PIN);
+
+        String s= String.valueOf(LoginCrd.pin);
+        String s2=String.valueOf(textInputLayout.getEditText().getText());
+
+        if(s.equals(s2)) {
+            Intent intent = new Intent(this, MainActivity.class);
+            RegistrationActivity.this.startActivity(intent);
+        }
     }
 }

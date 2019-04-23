@@ -29,6 +29,7 @@ public class MyLocationListener implements LocationListener {
                 != PackageManager.PERMISSION_GRANTED) {
             throw new NoAccessException();
         }
+
         locationManager.requestLocationUpdates(
                 LocationManager.GPS_PROVIDER,
                 5000,

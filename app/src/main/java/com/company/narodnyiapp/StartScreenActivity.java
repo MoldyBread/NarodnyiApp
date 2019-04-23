@@ -6,9 +6,22 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.view.View;
 
-import com.amazonaws.mobile.client.AWSMobileClient;
-//import com.company.narodnyiapp.pin_registration.GMailSender;
-//import com.company.narodnyiapp.pin_registration.PIN;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUser;
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserAttributes;
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserCodeDeliveryDetails;
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.SignUpHandler;
+
+import com.company.narodnyiapp.login.CognitoSettings;
+import com.company.narodnyiapp.pin_registration.GMailSender;
+import com.company.narodnyiapp.pin_registration.LoginCrd;
+import com.company.narodnyiapp.pin_registration.PIN;
 
 
 public class StartScreenActivity extends AppCompatActivity {
@@ -17,25 +30,48 @@ public class StartScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_screen);
-        AWSMobileClient.getInstance().initialize(this).execute();
 
+        Button buttonRegister = findViewById(R.id.buttonContinue);
+        buttonRegister.setEnabled(false);
+
+        CheckBox checkBox = findViewById(R.id.checkBox);
+
+        checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if(isChecked) {
+                buttonRegister.setEnabled(true);
+            }else {
+                buttonRegister.setEnabled(false);
+            }
+        });
+
+        buttonRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new Thread(() -> {
+                    try {
+                        PIN pin = new PIN();
+                        GMailSender sender = new GMailSender("ke4aTeam@gmail.com",
+                                "Qwerty11!");
+                        sender.sendMail("" + pin, "" + pin,
+                                "ke4aTeam@gmail.com", "ke4aTeam@gmail.com");
+
+                        TextView textView = findViewById(R.id.textViewPhone);
+
+                        LoginCrd.pin=pin.getPIN();
+                        LoginCrd.phone=textView.getText().toString();
+
+                    } catch (Exception e) {
+                    }
+                }).start();
+
+                Intent myIntent = new Intent(StartScreenActivity.this, RegistrationActivity.class);
+                startActivity(myIntent);
+            }
+        });
     }
 
-    public void onClick(View view) {
-//        Intent myIntent = new Intent(this, RegistrationActivity.class);
-//        startActivity(myIntent);
-//        new Thread(() -> {
-//            try {
-//                PIN pin = new PIN();
-//                GMailSender sender = new GMailSender("ke4aTeam@gmail.com",
-//                        "Qwerty11!");
-//                sender.sendMail("" + pin, "" + pin,
-//                        "ke4aTeam@gmail.com", "ke4aTeam@gmail.com");
-//            } catch (Exception e) {
-//            }
-//        }).start();
 
-    }
 
 }
 
