@@ -20,10 +20,10 @@ public class RegistrationActivity extends AppCompatActivity {
 
         TextInputLayout textInputLayout = findViewById(R.id.enter_PIN);
 
-        String s= String.valueOf(LoginCrd.pin);
+
         String s2=String.valueOf(textInputLayout.getEditText().getText());
 
-        if(s.equals(s2)) {
+        if(LoginCrd.pin.equals(s2)) {
             Intent intent = new Intent(this, MainActivity.class);
             RegistrationActivity.this.startActivity(intent);
         }
