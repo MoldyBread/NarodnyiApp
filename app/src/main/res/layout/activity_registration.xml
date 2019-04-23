@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/Registration"
         android:text="@string/registration"
-        app:layout_constraintBottom_toBottomOf="@+id/enter_password"
+        app:layout_constraintBottom_toBottomOf="@+id/enter_PIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="true"
@@ -21,36 +21,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.335"/>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/enter_password"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:passwordToggleDrawable="@android:drawable/ic_menu_view"
-        app:passwordToggleEnabled="true"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232">
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/enter_password"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:passwordToggleDrawable="@android:drawable/ic_menu_view"-->
+        <!--app:passwordToggleEnabled="true"-->
+        <!--tools:ignore="MissingConstraints"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.232">-->
 
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/input_password"
-            android:inputType="textPassword"
-            android:textAllCaps="false" />
-    </android.support.design.widget.TextInputLayout>
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:id="@+id/password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/input_password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:textAllCaps="false" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/enter_PIN"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/enter_password"
-        app:layout_constraintRight_toRightOf="@+id/enter_password"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.342"
         app:passwordToggleDrawable="@android:drawable/ic_menu_view"

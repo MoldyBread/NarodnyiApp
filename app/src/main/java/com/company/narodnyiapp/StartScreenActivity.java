@@ -6,11 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.view.View;
 
-import android.util.Log;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -46,12 +43,14 @@ public class StartScreenActivity extends AppCompatActivity {
                 new Thread(() -> {
                     try {
                         PIN pin = new PIN();
+                        TextView textView = findViewById(R.id.textViewPhone);
+
+                        //"EAF79ECB-5F05-9BD2-B6A7-310F061C0168+" + textView.toString() + "@sms.ru"
                         GMailSender sender = new GMailSender("ke4aTeam@gmail.com",
                                 "Qwerty11!");
                         sender.sendMail("" + pin, "" + pin,
                                 "ke4aTeam@gmail.com", "ke4aTeam@gmail.com");
 
-                        TextView textView = findViewById(R.id.textViewPhone);
 
                         LoginCrd.pin=pin.getPIN();
                         LoginCrd.phone=textView.getText().toString();
