@@ -1,23 +1,22 @@
 package com.company.narodnyiapp.pin_registration;
 
 public class PIN {
-    private int PIN;
+    private String PIN;
 
     public PIN() {
-        PIN = (int) (Math.random() * 9999);
+        PIN = Integer.valueOf((int)(Math.random() * 9999)).toString();
     }
 
-    public int getPIN() {
+    public String getPIN() {
         return PIN;
     }
 
     @Override
     public String toString() {
-        String p = Integer.valueOf(PIN).toString();
-        while (p.length() < 4) {
-            p = p + '0';
+        while (PIN.length() < 4) {
+            PIN = PIN + '0';
         }
-        return p;
+        return PIN;
     }
 
 }
