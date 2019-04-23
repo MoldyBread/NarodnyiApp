@@ -39,8 +39,7 @@ dependencies {
     implementation files('libs/activation.jar')
     implementation files('libs/additionnal.jar')
     implementation files('libs/mail.jar')
-
-
     implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.6.29'
     implementation 'com.amazonaws:aws-android-sdk-core:2.6.29'
+    implementation files('libs/PlateRecognizer.jar')
 }
