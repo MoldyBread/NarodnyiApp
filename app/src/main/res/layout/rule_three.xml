@@ -7,6 +7,16 @@
         android:id="@+id/third_txt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="three page"/>
+        android:text="3. Відправити форму"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="125dp"
+        android:textSize="27sp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/right" />
 
 </android.support.constraint.ConstraintLayout>
